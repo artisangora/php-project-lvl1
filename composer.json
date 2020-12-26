@@ -6,7 +6,8 @@
   }
   ,
   "require-dev": {
-    "roave/security-advisories": "dev-master"
+    "roave/security-advisories": "dev-master",
+    "squizlabs/php_codesniffer": "^3.5"
   },
   "bin": [
     "bin/brain-games"
@@ -15,5 +16,8 @@
     "psr-4": {
       "Brain\\Games\\": "src"
     }
+  },
+  "scripts": {
+    "linter": "phpcs -- --standard=PSR12 src bin"
   }
 }
