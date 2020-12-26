@@ -7,5 +7,8 @@ validate:
 lint:
 	composer run-script linter
 
-bg:
+brain-games:
 	./bin/brain-games
+
+brain-even:
+	./bin/brain-even
