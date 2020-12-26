@@ -1,8 +1,19 @@
 {
-    "name": "hexlet/code",
-    "description": "Hexlet first project",
-    "require": {},
-    "bin": [
-      "bin/brain-games"
-    ]
+  "name": "hexlet/code",
+  "description": "Hexlet first project",
+  "require": {
+    "wp-cli/php-cli-tools": "^0.11.11"
+  }
+  ,
+  "require-dev": {
+    "roave/security-advisories": "dev-master"
+  },
+  "bin": [
+    "bin/brain-games"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Brain\\Games\\": "src"
+    }
+  }
 }
