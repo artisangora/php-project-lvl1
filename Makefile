@@ -7,6 +7,9 @@ validate:
 lint:
 	composer run-script linter
 
+test:
+	./vendor/bin/phpunit tests
+
 brain-games:
 	./bin/brain-games
 
