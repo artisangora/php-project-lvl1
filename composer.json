@@ -19,9 +19,16 @@
     "bin/brain-prime"
   ],
   "autoload": {
-    "psr-4": {
-      "Brain\\Games\\": "src"
-    }
+    "files": [
+      "src/Cli.php",
+      "src/Engine.php",
+      "src/Game/Calc.php",
+      "src/Game/Even.php",
+      "src/Game/Gcd.php",
+      "src/Game/Prime.php",
+      "src/Game/Progression.php",
+      "src/Service/RandomGenerator.php"
+    ]
   },
   "autoload-dev": {
     "psr-4": {
