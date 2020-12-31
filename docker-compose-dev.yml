@@ -9,7 +9,7 @@ services:
     tty: true
     environment:
       XDEBUG_CONFIG: "remote_host=host.docker.internal remote_enable=1"
-      PHP_IDE_CONFIG: "serverName=PriceHunterDocker"
+      PHP_IDE_CONFIG: "serverName=HexletProject"
     networks:
       - internal
 networks:
