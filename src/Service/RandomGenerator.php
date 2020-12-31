@@ -8,4 +8,10 @@ class RandomGenerator
     {
         return random_int(0, 100);
     }
+
+    public function generateRandomOperator(array $availableOperators)
+    {
+        $key = random_int(0, count($availableOperators) - 1);
+        return $availableOperators[$key];
+    }
 }
