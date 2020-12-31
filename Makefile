@@ -9,8 +9,8 @@ test:
 	./vendor/bin/phpunit tests
 
 php:
-	docker-compose up -d
-	docker-compose exec php-cli bash
+	docker-compose -f docker-compose-dev.yml up -d
+	docker-compose -f docker-compose-dev.yml exec php-cli bash
 
 brain-games:
 	./bin/brain-games
@@ -22,3 +22,5 @@ brain-gcd:
 	./bin/brain-gcd
 brain-progression:
 	./bin/brain-progression
+brain-prime:
+	./bin/brain-prime

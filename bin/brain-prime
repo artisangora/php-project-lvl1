@@ -11,8 +11,8 @@ if (file_exists($autoloadPath1)) {
 
 use Brain\Games\Engine;
 use Brain\Games\Service\RandomGenerator;
-use Brain\Games\Task\CalcTask;
+use Brain\Games\Task\PrimeTask;
 
 $game = new Engine();
-$task = new CalcTask(new RandomGenerator());
+$task = new PrimeTask(new RandomGenerator());
 $game->start($task);
